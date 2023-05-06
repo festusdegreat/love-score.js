@@ -1,0 +1,23 @@
+var name=prompt("What is your name?");
+var crush=prompt("What is your crush's name?");
+var crushfirstletter =crush.slice(0,1)
+var crushcapitalfirstletter = crushfirstletter.toUpperCase();
+var crushrestofname =crush.slice(1,crush.length);
+crushrestofname = crushrestofname.toLowerCase();
+var firstletter = name.slice(0,1)
+var capitalfirstletter = firstletter.toUpperCase();
+var restofname = name.slice(1,name.length);
+restofname =restofname.toLowerCase();
+var n = Math.random()
+
+n = n*100
+n = Math.floor(n)+1
+if (n >= 50 && n<= 79 ){
+    alert("Hello, " + capitalfirstletter +restofname+ " your crush "+crushcapitalfirstletter+crushrestofname+" is also in love with you "+n+"% ,you guys were made for each other");  
+}
+    
+
+if ( n>= 80 && n<= 100){alert("Hello, " + capitalfirstletter +restofname+ " your crush "+crushcapitalfirstletter+crushrestofname+" is also in love with you "+n+"% ,When are you guys getting married"); 
+}    
+if ( n >= 1 && n<= 49) {alert("Hello, " + capitalfirstletter +restofname+ " your crush "+crushcapitalfirstletter+crushrestofname+" is also in love with you "+n+"% ,you guys are not meant to be ,sorry");  
+}   
